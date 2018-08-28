@@ -1,0 +1,72 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+    <include layout="@layout/toolbar_layout"/>
+
+    <View
+        android:id="@+id/memorytask_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/red"
+        android:layout_below="@+id/toolbar"/>
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/memorytask_line1"
+        android:text="在下面的列表中选择这条单独编址属于哪个回路"
+        android:textSize="16sp"
+        android:layout_margin="@dimen/dp_10"
+        android:gravity="left"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_memorytask"
+        android:dividerHeight="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@+id/tv_tip"
+        android:layout_above="@+id/line"/>
+    <TextView
+        android:id="@+id/view_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/memorytask_line1"
+        android:background="@color/white"
+        android:layout_above="@+id/line"
+        android:text="没有要选择的回路编号，请尝试点击右下角“新建”去建立新的回路任务。"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:visibility="gone"/>
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/red"
+        android:layout_above="@+id/ll_bottom"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="right"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/tv_mewlooptask"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="新建"
+            android:textColor="@color/gray"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:textSize="20sp"
+            android:gravity="center"/>
+    </LinearLayout>
+</RelativeLayout>

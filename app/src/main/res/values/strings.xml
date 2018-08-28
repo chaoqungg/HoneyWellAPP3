@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">H-Toolkits</string>
+
+    <string name="login">登录</string>
+    <string name="register"><u>注册</u></string>
+    <string name="modifypassword">修改密码</string>
+
+
+    <string name="exit">再按一次退出程序</string>
+    <string name="useknow">1、使用前请确保手机电量充足。\n2、开发人员使用统一账号和密码，无需修改密码。\n3、现场人员初始默认账号：adminble。默认密码：123456，请及时修改默认密码。</string>
+    <string name="useknowel">1、使用前请确保手机电量充足。\n2、开发人员使用统一账号和密码，无需修改密码。\n3、现场人员初始默认账号：adminel。默认密码：123456，请及时修改默认密码。</string>
+    <string name="tips"><![CDATA[1、3333—>3位地址，444—>4位地址。\n2、输入地址与已使用地址不能重复。]]></string>
+    <string name="tips2"><![CDATA[1、3333—>3位地址，444—>4位地址。]]></string>
+    <!--红色字体-->
+    <string name="backspace1">&#160;</string>
+    <string name="backspace2">&#160;&#160;</string>
+    <!--一个汉字的宽度-->
+    <string name="backspace_hanzi1">&#8194;&#8194;</string>
+    <string name="backspace_hanzi2">&#8194;&#8194;&#8194;&#8194;</string>
+    <string name="scan_failed">Scan failed!</string>
+</resources>

@@ -1,0 +1,109 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="MenuStyle" parent="@style/Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item><!--把该属性改为false即可使menu位置位于toolbar之下-->
+        <!--按钮的背景颜色-->
+        <item name="android:popupBackground">@color/colorPrimary</item>
+        <!--弹出菜单与标题栏的垂直间距-->
+        <item name="android:dropDownVerticalOffset">10.0dip</item>
+        <!--menu菜单的字体颜色-->
+        <item name="android:textColorPrimary">@color/white</item>
+        <!--menu字体大小-->
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="mToolbarStyle" parent="@style/Widget.AppCompat.Toolbar">
+        <item name="android:paddingRight">10dp</item>
+    </style>
+    <style name="dot_style">
+        <item name="android:layout_width">8dp</item>
+        <item name="android:layout_height">8dp</item>
+        <item name="android:background">@drawable/drawable_point_indicator</item>
+        <item name="android:layout_marginLeft">1dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_marginRight">1dip</item>
+    </style>
+
+    <!--&lt;!&ndash;自定义dialog背景全透明无边框theme &ndash;&gt;-->
+    <!--<style name="MyDialog" parent="android:style/Theme.Dialog">-->
+        <!--&lt;!&ndash;背景颜色及和透明程度&ndash;&gt;-->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--&lt;!&ndash;是否去除标题 &ndash;&gt;-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--&lt;!&ndash;是否去除边框&ndash;&gt;-->
+        <!--<item name="android:windowFrame">@null</item>-->
+        <!--&lt;!&ndash;是否浮现在activity之上&ndash;&gt;-->
+        <!--<item name="android:windowIsFloating">true</item>-->
+        <!--&lt;!&ndash;是否模糊&ndash;&gt;-->
+        <!--<item name="android:backgroundDimEnabled">false</item>-->
+    <!--</style>-->
+
+    <!--自定义列表dialog -->
+    <style name="Custom_ListDialog" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@drawable/edittext_bg</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <!--<item name="android:windowFrame">@null</item>-->
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--背景是否变暗-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:textAppearance">@style/Base.DialogWindowTitle.AppCompat</item>
+    </style>
+
+    <style name="ReadmeDialog" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--是否半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+
+        <item name="android:background">#00000000</item>
+    </style>
+    <!-- 稍微修改系统自带的dialog -->
+    <style name="progressDialog" parent="@android:style/Theme.Material.Light.Dialog">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="J_Dialog_Style">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="J_DIalog_Style_Dim_enable" parent="J_Dialog_Style">
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+    </style>
+
+    <style name="J_DIalog_Style_Dim_disable" parent="J_Dialog_Style">
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+    </style>
+
+    //设置透明Theme
+
+    <style name="AppStartLoadTranslucent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+</resources>

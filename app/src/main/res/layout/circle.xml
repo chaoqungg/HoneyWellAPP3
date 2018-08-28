@@ -1,0 +1,258 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f9f9">
+    <include layout="@layout/toolbar_layout"/>
+
+    <View
+        android:id="@+id/son_line1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#b8b8b8"
+        android:layout_below="@+id/toolbar"/>
+
+    <include layout="@layout/activity_singleaddress_blehead"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_below="@+id/son_line1"/>
+
+    <com.honeywell.honeywellproject.WidgeView.SoftInputRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_singleaddress_top"
+        android:layout_above="@+id/rl_progress">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/white"
+            android:scaleType="centerCrop"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:background="@drawable/soild"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="17">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="在线数量: "
+                            android:textColor="#3e3e3e" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="16dp"
+                            android:text="重码数量: "
+                            android:textColor="#3e3e3e" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/onnum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/textView"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:text="0"
+                            android:textColor="#3e3e3e"/>
+
+                        <TextView
+                            android:id="@+id/renum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/textView2"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerInParent="true"
+                            android:text="0"
+                            android:layout_marginTop="16dp"
+                            android:layout_below="@+id/onnum"
+                            android:textColor="#3e3e3e"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7">
+
+                    <!--<ToggleButton-->
+                        <!--android:id="@+id/togglebutton"-->
+                        <!--android:layout_width="80dp"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:textOn="停止"-->
+                        <!--android:textOff="扫描"-->
+                        <!--android:gravity="center"-->
+                        <!--android:layout_gravity="center_vertical|center_horizontal"-->
+                        <!--android:textSize="15dp"-->
+                        <!--android:background="@drawable/background"/>-->
+
+                    <Button
+                        android:id="@+id/btn_scan"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:text="扫描"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:textSize="15dp"
+                        android:background="@drawable/background" />
+                </LinearLayout>
+                >
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:layout_weight="0.85"
+                    />
+
+                <TextView
+                    android:id="@+id/row_number0"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:id="@+id/row_number1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="1"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/row_number2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="2"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/row_number3"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="3"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/row_number4"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="4"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/row_number5"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="5"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/row_number6"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="6"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/row_number7"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="7"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/row_number8"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="8"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/row_number9"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="9"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                >
+                <!--<GridView
+                    android:id="@+id/girdview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:stretchMode="columnWidth"
+                    >
+                </GridView>-->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </com.honeywell.honeywellproject.WidgeView.SoftInputRelativeLayout>
+</RelativeLayout>

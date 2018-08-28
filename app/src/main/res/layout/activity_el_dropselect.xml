@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/root_dialog"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@android:color/transparent"
+              android:visibility="gone"
+              android:orientation="vertical"
+              xmlns:tools="http://schemas.android.com/tools"
+              tools:context=".ELModule.El_SingleFreeActivity"
+              tools:showIn="@layout/activity_el_single_free">
+ <ListView
+     android:id="@+id/lv_select"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:divider="@null"
+     tools:listitem="@layout/activity_el_dropselect_item"/>
+    <View
+        android:id="@+id/ll_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#Af7F7F7F" />
+</LinearLayout>

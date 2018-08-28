@@ -1,0 +1,74 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f9f9">
+    <include layout="@layout/toolbar_layout"/>
+
+    <View
+        android:id="@+id/father_line1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#b8b8b8"
+        android:layout_below="@+id/toolbar"/>
+
+    <com.honeywell.honeywellproject.WidgeView.SoftInputRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_below="@+id/father_line1"
+        android:layout_above="@+id/ll_bottom">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_fathertask"
+            android:dividerHeight="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"/>
+        <TextView
+            android:id="@+id/view_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="暂无回路。"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:visibility="gone"/>
+    </com.honeywell.honeywellproject.WidgeView.SoftInputRelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/tv_selectall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="全选"
+            android:layout_weight="2"
+            android:textColor="@color/gray"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/btn_add_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_bottom"/>
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="删除"
+            android:layout_weight="2"
+            android:textColor="@color/gray"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+</RelativeLayout>

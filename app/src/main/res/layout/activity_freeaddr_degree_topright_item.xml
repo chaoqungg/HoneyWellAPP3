@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white">
+    <ImageView
+        android:id="@+id/iv_xiazai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/righttop_xiazai_50"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"/>
+        <TextView
+            android:id="@+id/tv_degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_xiazai"
+            android:text="下载速度"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:textColor="@color/gray_text686b72"
+            android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/tv_degree">
+
+        <com.honeywell.honeywellproject.WidgeView.RangeSeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:rsb_markTextArray="@array/wordsArray"
+            app:rsb_lineColorSelected="@color/red_textee3124"
+            app:rsb_lineColorEdge="@color/colorSeekBarDefault"
+            app:rsb_cells="2"
+            app:rsb_progressHintMode="alwaysHide"
+            app:rsb_textSize="14sp"
+            app:rsb_hintBGHeight="20dp"
+            app:rsb_seekBarHeight="2dp"
+            app:rsb_thumbSize="15dp"
+            app:rsb_cellMode="other"
+            app:rsb_seekBarMode="single"
+            app:rsb_max="6"
+            app:rsb_min="2"
+            app:rsb_thumbPrimaryColor="@color/red_textee3124"
+            app:rsb_thumbSecondaryColor="@color/red_textee3124"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

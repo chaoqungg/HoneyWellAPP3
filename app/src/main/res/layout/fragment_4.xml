@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@color/white">
+
+
+    <com.honeywell.honeywellproject.WidgeView.unInterceptLinearLayout
+            android:id="@+id/ll_light_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="30"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:id="@+id/diaozhuang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/yuan_dark" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diaozhuang"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-26dp"
+                android:text="吊装式照明灯"
+                android:textSize="13sp" />
+        </com.honeywell.honeywellproject.WidgeView.unInterceptLinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20">
+    </LinearLayout>
+
+    <com.honeywell.honeywellproject.WidgeView.unInterceptLinearLayout
+        android:id="@+id/ll_light_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="30"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/bigua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/fang_dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bigua"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-26dp"
+            android:textSize="13sp"
+            android:text="壁挂式照明灯" />
+    </com.honeywell.honeywellproject.WidgeView.unInterceptLinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20">
+    </LinearLayout>
+
+</LinearLayout>

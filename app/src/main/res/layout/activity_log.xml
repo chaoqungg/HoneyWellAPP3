@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8">
+
+    <include layout="@layout/toolbar_layout"/>
+    <View
+        android:id="@+id/line_log_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#b8b8b8"
+        android:layout_below="@+id/toolbar"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_logtask"
+        android:dividerHeight="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/line_log_top"/>
+    <TextView
+        android:id="@+id/view_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line_log_top"
+        android:text="暂无历史记录。"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:visibility="gone"/>
+</RelativeLayout>

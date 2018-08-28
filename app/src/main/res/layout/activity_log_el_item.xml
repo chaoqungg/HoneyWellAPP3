@@ -1,0 +1,44 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_4"
+    android:layout_marginBottom="@dimen/dp_4"
+    android:background="@color/white">
+
+
+        <ImageView
+            android:id="@+id/iv_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/clock_50"/>
+        <TextView
+            android:id="@+id/tv_log_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017-01-01 2017-01-01"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_log"
+            android:textColor="@color/gray_text686b72"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_log_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_log_time"
+            android:layout_alignLeft="@+id/tv_log_time"
+            android:layout_marginTop="@dimen/dp_4"
+            android:layout_marginBottom="@dimen/dp_4"
+            android:text="编址102成功，类型为探头"
+            android:maxLines="1"
+            android:textColor="@color/gray_text686b72"
+            android:textSize="15sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#b8b8b8"
+            android:layout_below="@+id/tv_log_detail"/>
+</RelativeLayout>

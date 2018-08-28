@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+<LinearLayout
+    android:id="@+id/protocol"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/xieyileixing"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="协议类型"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#232324"
+        android:textSize="16sp"/>
+    <Spinner
+        android:id="@+id/spinner"
+        android:entries="@array/type2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/xieyileixing"
+        >
+    </Spinner>
+
+</LinearLayout>
+
+    </RelativeLayout>

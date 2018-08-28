@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- 查询过的订单列表数据库 -->
+<litepal>
+<dbname value="honeywell"/>
+    <!--版本2 LoginInfoBean和FatherTaskBean修改getlist为懒查询-->
+    <!--版本3 Litepal出现问题：关联信息全部失效，表关联不上，所以版本3全部手动管理外键-->
+    <!--版本4 Sontaskbean加入logininfo_id，直接在son里面多条件查询即可，避免多表查询-->
+    <!--版本5、6 Fatherbean加入progressnpercent，代表子任务的完成进度，百分比数据-->
+    <!--版本7  加入EL的登录表-->
+    <!--版本8  SontaskBean 加入addressingtype  编址类型 CLIP\DLIP\FlashScan-->
+    <!--版本9  增加projectBean、ControllerBean,SonTaskBean加入所属类别（探头、模块）,Father和Son加入所有上级ID-->
+    <!--版本10 增加是否展开字段，但是不映射-->
+    <!--版本12 去掉以前的自带的外键关联，即在son中去掉fatherBean，fatherBean去掉controllerBean-->
+    <!--版本13 加入Logbean-->
+    <!--版本14 加入LogELbean-->
+    <!--版本15 SontaskBean加入DeviceType-->
+    <version value="2"/>
+<list>
+    <mapping class="com.honeywell.honeywellproject.BleTaskModule.FatherTask.data.FatherTaskBean"/>
+    <mapping class="com.honeywell.honeywellproject.BleTaskModule.SonTask.data.SonTaskBean"/>
+    <mapping class="com.honeywell.honeywellproject.LoginModule.data.LoginInfoBean"/>
+    <mapping class="com.honeywell.honeywellproject.LoginModule.data.LoginInfoBeanEL"/>
+    <mapping class="com.honeywell.honeywellproject.BleTaskModule.ProjectTask.data.ProjectBean"/>
+    <mapping class="com.honeywell.honeywellproject.BleTaskModule.ControllerTask.data.ControllerBean"/>
+    <mapping class="com.honeywell.honeywellproject.BleTaskModule.Log.data.LogBean"/>
+    <mapping class="com.honeywell.honeywellproject.ELModule.Log.data.LogELBean"/>
+</list>
+</litepal>

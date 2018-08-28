@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="43dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/righttop_audio_50"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/image"
+            android:text="语音提示"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:textColor="@color/gray_text686b72"
+            android:textSize="16sp"/>
+    <com.honeywell.honeywellproject.WidgeView.GuestLinearLayout
+        android:id="@+id/tips"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/name"
+        android:layout_centerVertical="true"
+        android:paddingLeft="8dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tips_40"
+        android:layout_gravity="center"
+        />
+    </com.honeywell.honeywellproject.WidgeView.GuestLinearLayout>
+
+        <com.honeywell.honeywellproject.WidgeView.SwitchButton
+            android:id="@+id/switch_button"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:sb_checked="false"
+            app:sb_show_indicator="false"
+            app:sb_checked_color="@color/red"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_shadow"/>
+</RelativeLayout>

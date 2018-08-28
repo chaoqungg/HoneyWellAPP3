@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.honeywell.honeywellproject">
+
+    <!-- 内置红外权限 -->
+    <uses-permission android:name="android.permission.TRANSMIT_IR"/>
+    <uses-permission android:name="ANDROID.PERMISSION.HARDWARE_TEST"/>
+    <!-- 二维码权限 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- 蓝牙广播权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+
+    <!-- 音频插入权限 -->
+    <!-- 下边的内容，表示允许应用改变当前的配置 -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <!-- 语音要求权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <!-- bugly要求权限 -->
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <!-- usb插入权限 -->
+    <uses-feature android:name="android.hardware.usb.host" />
+    <!--<uses-permission android:name="android.hardware.usb.host" />-->
+    <!--<uses-permission android:name="ANDROID.PERMISSION.HARDWARE_TEST" />-->
+    <!-- 判断应用是否被启动 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <application
+        android:name=".BaseActivity.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo_800"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".InitWellComeModule.WellcomePage.WellcomeActivity"
+            android:theme="@style/AppStartLoadTranslucent"
+            android:alwaysRetainTaskState="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+            <!--<meta-data-->
+                <!--android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"-->
+                <!--android:resource="@xml/device_filter" />-->
+        </activity>
+        <activity
+            android:name=".InitWellComeModule.WellcomePage.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".InitWellComeModule.BleOrElSelectActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".LoginModule.widge.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".LoginModule.widge.RegistActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".LoginModule.widge.LoginELActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <!-- 二维码activity -->
+        <activity
+            android:name=".BleSuperModule.widge.BleSuperActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".LoginModule.widge.ModifyPassWordActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".LoginModule.widge.ModifyPassWordELActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ELModule.ELActivityNewUI"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+       </activity>
+        <!--<service android:name=".ServiceModule.UsbService">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />-->
+            <!--</intent-filter>-->
+            <!--<meta-data-->
+                <!--android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"-->
+                <!--android:resource="@xml/device_filter" />-->
+        <!--</service>-->
+        <activity
+            android:name=".ELModule.El_SingleFreeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".BleTaskModule.SingleAddress.SingleAddressActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".BleTaskModule.BleAddressingTypeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".BleTaskModule.SingleAddress.MemoryAddressing.widge.MemoryTaskActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".BleTaskModule.ProjectTask.widge.ProjectTaskActivity"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name=".BleTaskModule.ControllerTask.widge.ControllerTaskActivity"/>
+        <activity android:name=".BleTaskModule.FatherTask.widge.FatherTaskActivityNewNI"/>
+        <activity android:name=".BleTaskModule.SonTask.widge.SonTaskActivityNewUI"/>
+        <activity
+            android:name=".BleTaskModule.SingleAddress.SingleFreeAddressing.SingleFreeAddressActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".BleTaskModule.SingleAddress.SingleTaskAddressing.widge.SingleTaskAddressActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".BleTaskModule.Log.widge.LogActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ELModule.Log.widge.LogELActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".BleTaskModule.QrCode.CaptureActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".BleTaskModule.QrCode.QrCodeSuccessActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".BleTaskModule.QrCode.QrCodeInputActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".BleTaskModule.AddressDownLoad.widge.AddressDownLoadActivityNewUI"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".BleTaskModule.AddressSearch.Test"
+            android:screenOrientation="portrait"/>
+
+
+    </application>
+
+</manifest>

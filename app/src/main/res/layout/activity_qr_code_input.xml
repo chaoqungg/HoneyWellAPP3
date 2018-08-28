@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.honeywell.honeywellproject.BleTaskModule.QrCode.QrCodeSuccessActivity">
+    <include layout="@layout/toolbar_layout"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#b8b8b8"
+        android:layout_below="@+id/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="32dp"
+            android:background="#f9f9f9"
+            android:layout_below="@+id/ll_success">
+            <TextView
+                android:id="@+id/qr_number1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="32dp"
+                android:text="编号："
+                android:textColor="@color/gray_text686b72"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/qr_number2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XX"
+                android:layout_toRightOf="@+id/qr_number1"
+                android:layout_alignTop="@+id/qr_number1"
+                android:textColor="@color/gray_text686b72"
+                android:textSize="16sp"/>
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#b8b8b8"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="23dp"
+                android:layout_below="@+id/qr_number1"/>
+            <TextView
+                android:id="@+id/qr_series1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_alignLeft="@+id/qr_number1"
+                android:layout_below="@+id/line2"
+                android:text="序列号："
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/qr_series2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入10位序列号"
+                android:inputType="number"
+                android:maxLength="10"
+                android:background="@null"
+                android:layout_toRightOf="@+id/qr_series1"
+                android:layout_alignTop="@+id/qr_series1"
+                android:textColor="@color/gray_text686b72"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:id="@+id/qr_add1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignLeft="@+id/qr_number1"
+                android:layout_below="@+id/qr_series1"
+                android:text="地址："
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/qr_add2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入数字地址"
+                android:inputType="number"
+                android:maxLength="3"
+                android:background="@null"
+                android:layout_toRightOf="@+id/qr_add1"
+                android:layout_alignTop="@+id/qr_add1"
+                android:textColor="@color/gray_text686b72"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/qr_type1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignLeft="@+id/qr_number1"
+                android:layout_below="@+id/qr_add1"   android:text="类型："
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/qr_type2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入设备类型"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:background="@null"
+                android:layout_toRightOf="@+id/qr_type1"
+                android:layout_alignTop="@+id/qr_type1"
+                android:textColor="@color/gray_text686b72"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/qr_description1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_alignLeft="@+id/qr_number1"
+                android:layout_below="@+id/qr_type1"
+                android:text="描述："
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+            <EditText
+                android:id="@+id/qr_description2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入描述"
+                android:background="@null"
+                android:layout_toRightOf="@+id/qr_description1"
+                android:layout_alignTop="@+id/qr_description1"
+                android:textColor="@color/gray_text686b72"
+                android:textSize="16sp"/>
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/qr_sure"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="确认添加"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_singleaddr_read"/>
+
+    </LinearLayout>
+</RelativeLayout>

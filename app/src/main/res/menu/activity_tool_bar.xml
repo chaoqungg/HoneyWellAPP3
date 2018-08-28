@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <item android:id="@+id/action_blestate"
+          android:title=""
+          android:orderInCategory="100"
+          app:showAsAction="always"
+          android:visible="false"
+          app:actionLayout="@layout/menu_blestate"
+        />
+    <item android:id="@+id/action_menu"
+          android:title=""
+          android:orderInCategory="100"
+          app:showAsAction="always"
+          app:actionLayout="@layout/menu_action"
+        />
+</menu>

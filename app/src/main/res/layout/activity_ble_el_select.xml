@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.honeywell.honeywellproject.InitWellComeModule.BleOrElSelectActivity">
+
+<include layout="@layout/toolbar_layout"/>
+    <View
+        android:id="@+id/line_bleorel_top"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#b8b8b8"
+        android:layout_below="@+id/toolbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@+id/line_bleorel_top">
+        <ImageView
+            android:id="@+id/btn_el"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ir_240"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/tv_eltest"/>
+        <TextView
+            android:id="@+id/tv_eltest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="红外调试器"
+            android:textColor="@color/gray_text"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/view_center"/>
+
+        <ImageView
+            android:id="@+id/btn_ble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ble_240"
+            android:layout_below="@+id/view_center"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="蓝牙调试器"
+            android:textColor="@color/gray_text"
+            android:layout_below="@id/btn_ble"
+            android:layout_centerHorizontal="true"/>
+        <View
+            android:id="@+id/view_center"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="40dp"/>
+</RelativeLayout>
+
+
+</RelativeLayout>

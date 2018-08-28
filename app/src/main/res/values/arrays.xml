@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string-array name="wordsArray">
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+
+    </string-array>
+    <string-array name="type">
+        <item>协议类型</item>
+        <item>CLIP</item>
+        <item>DLIP</item>
+        <item>FLASHSCAN</item>
+
+
+    </string-array>
+    <!--&lt;!&ndash;  按照灯板顺序1-9个灯板  &ndash;&gt;-->
+
+    <!--&lt;!&ndash;双向指示灯&ndash;&gt;-->
+    <!--<string-array name="Lamps_sxzs">-->
+        <!--<item>双面双向指示灯</item>-->
+        <!--<item>单面双向指示灯</item>-->
+        <!--<item>单面双向指示灯（IP65）</item>-->
+    <!--</string-array>-->
+    <!--&lt;!&ndash;左向指示灯&ndash;&gt;-->
+    <!--<string-array name="Lamps_zxzs">-->
+        <!--<item>单面左向指示灯</item>-->
+        <!--<item>双面左向指示灯</item>-->
+    <!--</string-array>-->
+    <!--&lt;!&ndash;右向指示灯&ndash;&gt;-->
+    <!--<string-array name="Lamps_yxzs">-->
+        <!--<item>右向指示灯</item>-->
+    <!--</string-array>-->
+    <!--&lt;!&ndash;单面楼层指示灯&ndash;&gt;-->
+    <!--<string-array name="Lamps_dmlc">-->
+        <!--<item>单面楼层指示灯</item>-->
+    <!--</string-array>-->
+    <!--&lt;!&ndash;出口指示灯&ndash;&gt;-->
+    <!--<string-array name="Lamps_ckzs">-->
+        <!--<item>单面出口指示灯</item>-->
+        <!--<item>单面出口指示灯语音型</item>-->
+        <!--<item>单面出口指示灯（IP65）</item>-->
+        <!--<item>双面出口指示灯</item>-->
+    <!--</string-array>-->
+    <!--&lt;!&ndash;吊装式照明灯&ndash;&gt;-->
+    <!--<string-array name="Lamps_dzzm">-->
+        <!--<item>吊装式3W照明灯</item>-->
+        <!--<item>吊装式5W照明灯</item>-->
+    <!--</string-array>-->
+    <!--&lt;!&ndash;壁挂式照明灯&ndash;&gt;-->
+    <!--<string-array name="Lamps_bgzm">-->
+        <!--<item>壁挂式3W照明灯</item>-->
+        <!--<item>壁挂式5W照明灯</item>-->
+    <!--</string-array>-->
+    <!--&lt;!&ndash;地埋单向&ndash;&gt;-->
+    <!--<string-array name="Lamps_dmdx">-->
+        <!--<item>地埋式单向指示灯</item>-->
+    <!--</string-array>-->
+    <!--&lt;!&ndash;地埋双向&ndash;&gt;-->
+    <!--<string-array name="Lamps_dmsx">-->
+        <!--<item>地埋式双向指示灯</item>-->
+    <!--</string-array>-->
+</resources>
