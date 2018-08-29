@@ -119,6 +119,7 @@ public class Test extends  ToolBarActivity {
     private static final  int  addressNoExist  = 1001;
     private static final  int  addressExist  = 1002;
     private static final  int  addressRepeat  = 1003;
+    private static final  int  over=9999;
 
     /**
      * 重置
@@ -687,6 +688,10 @@ public class Test extends  ToolBarActivity {
                         handler.sendEmptyMessageDelayed(addressRepeat,speed);
                     }
 
+                    if(lampnum==200){
+                        handler.sendEmptyMessage(over);
+                    }
+
                 }
             }
         });
@@ -793,8 +798,9 @@ public class Test extends  ToolBarActivity {
             if(false==(Boolean) button1.getTag())
                 return;
 
-            if(lampnum==200)
+            if(lampnum==201)
                 return;
+
             if(addrstr%11==0){
                 addrstr++;
             }
@@ -822,8 +828,8 @@ public class Test extends  ToolBarActivity {
                     repeataddressnum++;
                     Writing("",0,0);
                     break;
-                case Reset:
-
+                case over:
+                    button1.setText("完成");
                     break;
                 default:
             }
